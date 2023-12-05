@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/qfpuksur/public_html/coenic
+    - export DEPLOYPATH=/home/qfpuksur/public_html/ft8.co.za/coenic
     - /bin/cp -R assets $DEPLOYPATH
     - /bin/cp -R forms $DEPLOYPATH
     - /bin/cp *.* $DEPLOYPATH
