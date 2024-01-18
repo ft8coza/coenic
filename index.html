@@ -48,48 +48,57 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet" />
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
     <script type="text/javascript">
-        (function () {
-            // https://dashboard.emailjs.com/admin/account
-            emailjs.init('U2hl62a_F9eq54pZB');
-        })();
+      (function () {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init("U2hl62a_F9eq54pZB");
+      })();
     </script>
     <script type="text/javascript">
-        window.onload = function () {
-            document.getElementById('contact-form').addEventListener('submit', function (event) {
-                event.preventDefault();
-               
-                // these IDs from the previous steps
-                emailjs.sendForm('service_ludjfmi', 'template_tgq12go', this)
-                    .then(function () {
-                        console.log('SUCCESS!');
-                        alert('Your mail is sent!');
-                        location.reload();
-                        
-                    }, function (error) {
-                        console.log('FAILED...', error);
-                        alert('Your mail is not sent!');
-                    });
-            });
-            document.getElementById('quote-form').addEventListener('submit', function (event) {
-                event.preventDefault();
-               
-                // these IDs from the previous steps
-                emailjs.sendForm('service_ludjfmi', 'template_tgq12go', this)
-                    .then(function () {
-                        console.log('SUCCESS!');
-                        alert('Your mail is sent!');
-                        location.reload();
-                        
-                    }, function (error) {
-                        console.log('FAILED...', error);
-                        alert('Your mail is not sent!');
-                    });
-            });
-        }
+      window.onload = function () {
+        document
+          .getElementById("contact-form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            // these IDs from the previous steps
+            emailjs.sendForm("service_ludjfmi", "template_tgq12go", this).then(
+              function () {
+                console.log("SUCCESS!");
+                alert("Your mail is sent!");
+                location.reload();
+              },
+              function (error) {
+                console.log("FAILED...", error);
+                alert("Your mail is not sent!");
+              }
+            );
+          });
+        document
+          .getElementById("quote-form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            // these IDs from the previous steps
+            emailjs.sendForm("service_ludjfmi", "template_tgq12go", this).then(
+              function () {
+                console.log("SUCCESS!");
+                alert("Your mail is sent!");
+                location.reload();
+              },
+              function (error) {
+                console.log("FAILED...", error);
+                alert("Your mail is not sent!");
+              }
+            );
+          });
+      };
     </script>
-     </head>
+  </head>
 
   <body>
     <!-- ======= Header ======= -->
@@ -177,9 +186,7 @@
       >
         <div
           class="carousel-item active"
-          style="
-            background-image: url(assets/img/hero-carousel/coen1.jpg);
-          "
+          style="background-image: url(assets/img/hero-carousel/coen1.jpg)"
         ></div>
         <div
           class="carousel-item"
@@ -187,15 +194,11 @@
         ></div>
         <div
           class="carousel-item"
-          style="
-            background-image: url(assets/img/hero-carousel/coen.jpg);
-          "
+          style="background-image: url(assets/img/hero-carousel/coen.jpg)"
         ></div>
         <div
           class="carousel-item"
-          style="
-            background-image: url(assets/img/hero-carousel/coen2.jpg);
-          "
+          style="background-image: url(assets/img/hero-carousel/coen2.jpg)"
         ></div>
         <!--<div
           class="carousel-item"
@@ -249,10 +252,7 @@
             </div>
 
             <div class="col-lg-5" data-aoss="fade">
-              <form
-                id="quote-form"
-                class="email-form"
-              >
+              <form id="quote-form" class="email-form">
                 <h3>Get a quote</h3>
                 <!--<p>Get in touch for a FREE no obligation quote.</p>-->
                 <div class="row gy-3">
@@ -402,7 +402,7 @@
             </div>
           </div>
         </div>
-      </section> 
+      </section>
       <!-- End Alt Services Section -->
 
       <!-- ======= Features Section ======= -->
@@ -450,7 +450,6 @@
               </a>
             </li>
             <!-- End tab nav item -->
-          
           </ul>
 
           <div class="tab-content">
@@ -528,7 +527,6 @@
                   data-aos-delay="20"
                 >
                   <img
-                    
                     src="assets/img/projects/residential1.jpg"
                     alt=""
                     class="img-fluid"
@@ -692,36 +690,49 @@
                   class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center"
                 >
                   <h3>Roads, Bridges & Tunnels</h3>
-                  <!--<p class="fst-italic">
-                    Road Markings and Signs:
-Sandblasting is used to remove old road markings, paint, and reflective materials from roads and signs, providing a clean slate for new markings.
-                  </p>-->
+                 
                   <ul>
                     <li>
                       <i class="bi bi-check2-all"></i> Highways and Bridges:
-                      Sandblasting helps maintain the integrity of highways and bridges by removing rust, corrosion, and old coatings, ensuring a durable and safe infrastructure.
+                      Sandblasting helps maintain the integrity of highways and
+                      bridges by removing rust, corrosion, and old coatings,
+                      ensuring a durable and safe infrastructure.
                     </li>
                     <li>
                       <i class="bi bi-check2-all"></i> Road Markings and Signs:
-                      Sandblasting is used to remove old road markings, paint, and reflective materials from roads and signs, providing a clean slate for new markings.
+                      Sandblasting is used to remove old road markings, paint,
+                      and reflective materials from roads and signs, providing a
+                      clean slate for new markings.
                     </li>
                     <li>
                       <i class="bi bi-check2-all"></i> Parking Lots:
-                      Sandblasting is utilized to refresh parking lots by removing old paint, markings, and oil stains, creating a clean and well-defined space for vehicles.
+                      Sandblasting is utilized to refresh parking lots by
+                      removing old paint, markings, and oil stains, creating a
+                      clean and well-defined space for vehicles.
                     </li>
                     <li>
                       <i class="bi bi-check2-all"></i> Airport Runways:
-                      Sandblasting is essential for maintaining airport runways, removing rubber buildup from landing gear and enhancing overall safety for aircraft.
+                      Sandblasting is essential for maintaining airport runways,
+                      removing rubber buildup from landing gear and enhancing
+                      overall safety for aircraft.
                     </li>
                     <li>
-                      <i class="bi bi-check2-all"></i> Railroad Tracks and Platforms:
-                      Sandblasting is applied to clean and prepare railroad tracks and platforms, removing rust and contaminants to ensure smooth and safe operations.
+                      <i class="bi bi-check2-all"></i> Railroad Tracks and
+                      Platforms: Sandblasting is applied to clean and prepare
+                      railroad tracks and platforms, removing rust and
+                      contaminants to ensure smooth and safe operations.
                     </li>
-                    <i class="bi bi-check2-all"></i> Historical Monuments:
-                    Sandblasting is often used in the preservation of historical monuments, gently removing dirt, pollutants, and aging layers to reveal the original detailing.
+                    <li>
+                      <i class="bi bi-check2-all"></i> Historical Monuments:
+                      Sandblasting is often used in the preservation of
+                      historical monuments, gently removing dirt, pollutants,
+                      and aging layers to reveal the original detailing.
                     </li>
-                    <i class="bi bi-check2-all"></i> Airport Tarmacs:
-                    Sandblasting is crucial for maintaining airport tarmacs, removing rubber deposits and contaminants to ensure optimal friction and safety during takeoffs and landings.
+                    <li>
+                      <i class="bi bi-check2-all"></i> Airport Tarmacs:
+                      Sandblasting is crucial for maintaining airport tarmacs,
+                      removing rubber deposits and contaminants to ensure
+                      optimal friction and safety during takeoffs and landings.
                     </li>
                   </ul>
                 </div>
@@ -735,7 +746,6 @@ Sandblasting is used to remove old road markings, paint, and reflective material
               </div>
             </div>
             <!-- End tab content item -->
-           
           </div>
         </div>
       </section>
@@ -758,9 +768,9 @@ Sandblasting is used to remove old road markings, paint, and reflective material
                 </div>
               </div>
             </div> -->
-            <!-- End Stats Item -->
+      <!-- End Stats Item -->
 
-            <!--<div class="col-lg-3 col-md-6">
+      <!--<div class="col-lg-3 col-md-6">
               <div class="stats-item d-flex align-items-center w-100 h-100">
                 <i
                   class="bi bi-journal-richtext color-orange flex-shrink-0"
@@ -776,9 +786,9 @@ Sandblasting is used to remove old road markings, paint, and reflective material
                 </div>
               </div>
             </div> -->
-            <!-- End Stats Item -->
+      <!-- End Stats Item -->
 
-            <!--<div class="col-lg-3 col-md-6">
+      <!--<div class="col-lg-3 col-md-6">
               <div class="stats-item d-flex align-items-center w-100 h-100">
                 <i class="bi bi-headset color-green flex-shrink-0"></i>
                 <div>
@@ -792,9 +802,9 @@ Sandblasting is used to remove old road markings, paint, and reflective material
                 </div>
               </div>
             </div> -->
-            <!-- End Stats Item -->
+      <!-- End Stats Item -->
 
-            <!--<div class="col-lg-3 col-md-6">
+      <!--<div class="col-lg-3 col-md-6">
               <div class="stats-item d-flex align-items-center w-100 h-100">
                 <i class="bi bi-people color-pink flex-shrink-0"></i>
                 <div>
@@ -808,8 +818,8 @@ Sandblasting is used to remove old road markings, paint, and reflective material
                 </div>
               </div>
             </div>-->
-            <!-- End Stats Item -->
-          <!--</div>
+      <!-- End Stats Item -->
+      <!--</div>
         </div>
       </section>-->
       <!-- End Stats Counter Section -->
@@ -853,11 +863,7 @@ Sandblasting is used to remove old road markings, paint, and reflective material
             >
               <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
                 <div class="portfolio-content h-100">
-                  <img
-                    src="assets/img/sand11.png"
-                    class="img-fluid"
-                    alt=""
-                  />
+                  <img src="assets/img/sand11.png" class="img-fluid" alt="" />
                   <div class="portfolio-info">
                     <!--<h4>Remodeling 1</h4>
                     <p>Lorem ipsum, dolor sit amet consectetur</p>-->
@@ -881,11 +887,7 @@ Sandblasting is used to remove old road markings, paint, and reflective material
 
               <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
                 <div class="portfolio-content h-100">
-                  <img
-                    src="assets/img/sand9.png"
-                    class="img-fluid"
-                    alt=""
-                  />
+                  <img src="assets/img/sand9.png" class="img-fluid" alt="" />
                   <div class="portfolio-info">
                     <!--<h4>Construction 1</h4>
                     <p>Lorem ipsum, dolor sit amet consectetur</p>-->
@@ -907,15 +909,9 @@ Sandblasting is used to remove old road markings, paint, and reflective material
               </div>
               <!-- End Projects Item -->
 
-             
-
               <div class="col-lg-4 col-md-6 portfolio-item filter-design">
                 <div class="portfolio-content h-100">
-                  <img
-                    src="assets/img/sand7.png"
-                    class="img-fluid"
-                    alt=""
-                  />
+                  <img src="assets/img/sand7.png" class="img-fluid" alt="" />
                   <div class="portfolio-info">
                     <!--<h4>Design 1</h4>
                     <p>Lorem ipsum, dolor sit amet consectetur</p>-->
@@ -939,11 +935,7 @@ Sandblasting is used to remove old road markings, paint, and reflective material
 
               <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
                 <div class="portfolio-content h-100">
-                  <img
-                    src="assets/img/sand6.png"
-                    class="img-fluid"
-                    alt=""
-                  />
+                  <img src="assets/img/sand6.png" class="img-fluid" alt="" />
                   <div class="portfolio-info">
                     <!--<h4>Remodeling 2</h4>
                     <p>Lorem ipsum, dolor sit amet consectetur</p>-->
@@ -967,11 +959,7 @@ Sandblasting is used to remove old road markings, paint, and reflective material
 
               <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
                 <div class="portfolio-content h-100">
-                  <img
-                    src="assets/img/sand5.png"
-                    class="img-fluid"
-                    alt=""
-                  />
+                  <img src="assets/img/sand5.png" class="img-fluid" alt="" />
                   <div class="portfolio-info">
                     <!--<h4>Construction 2</h4>
                     <p>Lorem ipsum, dolor sit amet consectetur</p>-->
@@ -995,11 +983,7 @@ Sandblasting is used to remove old road markings, paint, and reflective material
 
               <div class="col-lg-4 col-md-6 portfolio-item filter-repairs">
                 <div class="portfolio-content h-100">
-                  <img
-                    src="assets/img/sand4.png"
-                    class="img-fluid"
-                    alt=""
-                  />
+                  <img src="assets/img/sand4.png" class="img-fluid" alt="" />
                   <div class="portfolio-info">
                     <!--<h4>Repairs 2</h4>
                     <p>Lorem ipsum, dolor sit amet consectetur</p>-->
@@ -1180,7 +1164,12 @@ Sandblasting is used to remove old road markings, paint, and reflective material
                 <h4>Est 1992</h4>
                 <h3>Our Story</h3>
                 <p>
-                  Coenic sandblasting has been blasting since 1992, smoothing, preparing and treating surfaces in and around the Western Cape.  We pride ourselves in service delivery providing both on-site and off-site blasting and offering collection and delivery services for the items our clients need treated, saving time and hassle.
+                  Coenic sandblasting has been blasting since 1992, smoothing,
+                  preparing and treating surfaces in and around the Western
+                  Cape. We pride ourselves in service delivery providing both
+                  on-site and off-site blasting and offering collection and
+                  delivery services for the items our clients need treated,
+                  saving time and hassle.
                 </p>
                 <ul>
                   <li>
@@ -1197,8 +1186,10 @@ Sandblasting is used to remove old road markings, paint, and reflective material
                   </li>
                 </ul>
                 <p>
-                  a Well prepared surface is crucial when treating it with any form of coating. a Smooth surface ensures you get the best out of any coating that is applied, making it last longer. 
-                  Our experience ensures you quality and our focus is service.
+                  a Well prepared surface is crucial when treating it with any
+                  form of coating. a Smooth surface ensures you get the best out
+                  of any coating that is applied, making it last longer. Our
+                  experience ensures you quality and our focus is service.
                 </p>
 
                 <!--<div
@@ -1257,9 +1248,9 @@ Sandblasting is used to remove old road markings, paint, and reflective material
                   </div>
                 </div>
               </div>-->
-              <!-- End testimonial item -->
+      <!-- End testimonial item -->
 
-              <!--<div class="swiper-slide">
+      <!--<div class="swiper-slide">
                 <div class="testimonial-wrap">
                   <div class="testimonial-item">
                     <img
@@ -1287,9 +1278,9 @@ Sandblasting is used to remove old road markings, paint, and reflective material
                   </div>
                 </div>
               </div>-->
-              <!-- End testimonial item -->
+      <!-- End testimonial item -->
 
-              <!--<div class="swiper-slide">
+      <!--<div class="swiper-slide">
                 <div class="testimonial-wrap">
                   <div class="testimonial-item">
                     <img
@@ -1316,9 +1307,9 @@ Sandblasting is used to remove old road markings, paint, and reflective material
                   </div>
                 </div>
               </div>-->
-              <!-- End testimonial item -->
+      <!-- End testimonial item -->
 
-              <!--<div class="swiper-slide">
+      <!--<div class="swiper-slide">
                 <div class="testimonial-wrap">
                   <div class="testimonial-item">
                     <img
@@ -1346,9 +1337,9 @@ Sandblasting is used to remove old road markings, paint, and reflective material
                   </div>
                 </div>
               </div>-->
-              <!-- End testimonial item -->
+      <!-- End testimonial item -->
 
-              <!--<div class="swiper-slide">
+      <!--<div class="swiper-slide">
                 <div class="testimonial-wrap">
                   <div class="testimonial-item">
                     <img
@@ -1376,8 +1367,8 @@ Sandblasting is used to remove old road markings, paint, and reflective material
                   </div>
                 </div>
               </div>-->
-              <!-- End testimonial item -->
-            <!--</div>
+      <!-- End testimonial item -->
+      <!--</div>
             <div class="swiper-pagination"></div>
           </div>
         </div>
@@ -1402,7 +1393,12 @@ Sandblasting is used to remove old road markings, paint, and reflective material
               >
                 <i class="bi bi-map"></i>
                 <h3>Our Address</h3>
-                <a href="https://maps.app.goo.gl/H7qwoPgLoDZE3Bq8A" target="_blank">Welgelegen farm, Steneveld rd, off Bottelary Rd, Cape Town, 7625</a>
+                <a
+                  href="https://maps.app.goo.gl/H7qwoPgLoDZE3Bq8A"
+                  target="_blank"
+                  >Welgelegen farm, Steneveld rd, off Bottelary Rd, Cape Town,
+                  7625</a
+                >
               </div>
             </div>
             <!-- End Info Item -->
@@ -1413,7 +1409,9 @@ Sandblasting is used to remove old road markings, paint, and reflective material
               >
                 <i class="bi bi-envelope"></i>
                 <h3>Email Us</h3>
-                <a href="mailto:martin@coenic.co.za"  target="_blank">martin@coenic.co.za</a>
+                <a href="mailto:martin@coenic.co.za" target="_blank"
+                  >martin@coenic.co.za</a
+                >
               </div>
             </div>
             <!-- End Info Item -->
@@ -1424,81 +1422,82 @@ Sandblasting is used to remove old road markings, paint, and reflective material
               >
                 <i class="bi bi-telephone"></i>
                 <h3>Call Us</h3>
-                <a href="tel:0836044427"  target="_blank">083 604 4427</a>
+                <a href="tel:0836044427" target="_blank">083 604 4427</a>
+              </div>
+              <!-- End Info Item -->
             </div>
-            <!-- End Info Item -->
-          </div>
 
-          <div class="row gy-4 mt-1">
-            <div class="col-lg-6">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.8869067616793!2d18.775637611512746!3d-33.892566373105936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc539e3e4b0955%3A0xbe26d0fb70deb680!2sCoenic%20sandblasting!5e0!3m2!1sen!2sza!4v1701943221011!5m2!1sen!2sza"
-                width="600"
-                height="450"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
-            <!-- End Google Maps -->
+            <div class="row gy-4 mt-1">
+              <div class="col-lg-6">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.8869067616793!2d18.775637611512746!3d-33.892566373105936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc539e3e4b0955%3A0xbe26d0fb70deb680!2sCoenic%20sandblasting!5e0!3m2!1sen!2sza!4v1701943221011!5m2!1sen!2sza"
+                  width="600"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+              <!-- End Google Maps -->
 
-            <div class="col-lg-6">
-              <form id="contact-form" class="email-form">
-                <div class="row gy-4">
-                  <div class="col-lg-6 form-group">
+              <div class="col-lg-6">
+                <form id="contact-form" class="email-form">
+                  <div class="row gy-4">
+                    <div class="col-lg-6 form-group">
+                      <input
+                        type="text"
+                        name="from_name"
+                        class="form-control"
+                        id="name"
+                        placeholder="Your Name"
+                        required
+                      />
+                    </div>
+                    <div class="col-lg-6 form-group">
+                      <input
+                        type="email"
+                        class="form-control"
+                        name="user_email"
+                        id="email"
+                        placeholder="Your Email"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group">
                     <input
-                      type="text"
-                      name="from_name"
+                      type="tel"
                       class="form-control"
-                      id="name"
-                      placeholder="Your Name"
+                      name="contact_number"
+                      id="contact_number"
+                      placeholder="Contace number"
                       required
                     />
                   </div>
-                  <div class="col-lg-6 form-group">
-                    <input
-                      type="email"
+                  <div class="form-group">
+                    <textarea
                       class="form-control"
-                      name="user_email"
-                      id="email"
-                      placeholder="Your Email"
+                      name="message"
+                      rows="5"
+                      placeholder="Message"
                       required
-                    />
+                    ></textarea>
                   </div>
-                </div>
-                <div class="form-group">
-                  <input
-                    type="tel"
-                    class="form-control"
-                    name="contact_number"
-                    id="contact_number"
-                    placeholder="Contace number"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <textarea
-                    class="form-control"
-                    name="message"
-                    rows="5"
-                    placeholder="Message"
-                    required
-                  ></textarea>
-                </div>
-                <div class="my-3">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">
-                    Your message has been sent. Thank you!
+                  <div class="my-3">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">
+                      Your message has been sent. Thank you!
+                    </div>
                   </div>
-                </div>
-                <div class="text-center">
-                  <button type="submit">Send Message</button>
-                </div>
-              </form>
+                  <div class="text-center">
+                    <button type="submit">Send Message</button>
+                  </div>
+                </form>
+              </div>
+              <!-- End Contact Form -->
             </div>
-            <!-- End Contact Form -->
           </div>
         </div>
       </section>
@@ -1523,20 +1522,11 @@ Sandblasting is used to remove old road markings, paint, and reflective material
                 </p>
                 <div class="social-links d-flex mt-3">
                   <a
-                    href="https://web.facebook.com/sandblastingcapetown?_rdc=1&_rdr"
+                    href="https://web.facebook.com/sandblastingcapetown?_rdc=1&_rdr" target="_blank"
                     class="d-flex align-items-center justify-content-center"
                     ><i class="bi bi-facebook"></i
                   ></a>
-                  <a
-                    href="#"
-                    class="d-flex align-items-center justify-content-center"
-                    ><i class="bi bi-instagram"></i
-                  ></a>
-                  <a
-                    href="#"
-                    class="d-flex align-items-center justify-content-center"
-                    ><i class="bi bi-linkedin"></i
-                  ></a>
+                 
                 </div>
               </div>
             </div>
