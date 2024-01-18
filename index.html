@@ -48,7 +48,48 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet" />
-  </head>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('U2hl62a_F9eq54pZB');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById('contact-form').addEventListener('submit', function (event) {
+                event.preventDefault();
+               
+                // these IDs from the previous steps
+                emailjs.sendForm('service_ludjfmi', 'template_tgq12go', this)
+                    .then(function () {
+                        console.log('SUCCESS!');
+                        alert('Your mail is sent!');
+                        location.reload();
+                        
+                    }, function (error) {
+                        console.log('FAILED...', error);
+                        alert('Your mail is not sent!');
+                    });
+            });
+            document.getElementById('quote-form').addEventListener('submit', function (event) {
+                event.preventDefault();
+               
+                // these IDs from the previous steps
+                emailjs.sendForm('service_ludjfmi', 'template_tgq12go', this)
+                    .then(function () {
+                        console.log('SUCCESS!');
+                        alert('Your mail is sent!');
+                        location.reload();
+                        
+                    }, function (error) {
+                        console.log('FAILED...', error);
+                        alert('Your mail is not sent!');
+                    });
+            });
+        }
+    </script>
+     </head>
 
   <body>
     <!-- ======= Header ======= -->
@@ -200,7 +241,7 @@
                   The swiftest solution for eliminating grime, rust, paint, and
                   mold. Our expert techniques blast away layers of buildup,
                   unveiling a pristine under-surface that's as good as new.
-                  Witness the rejuvenation as we skillfully remove the
+                  Witness the rejuvenation as we skilfully remove the
                   accumulated wear and tear, bringing forth a fresh canvas for
                   your surfaces.
                 </p>
@@ -209,9 +250,8 @@
 
             <div class="col-lg-5" data-aoss="fade">
               <form
-                action="forms/quote.php"
-                method="post"
-                class="php-email-form"
+                id="quote-form"
+                class="email-form"
               >
                 <h3>Get a quote</h3>
                 <!--<p>Get in touch for a FREE no obligation quote.</p>-->
@@ -219,7 +259,7 @@
                   <div class="col-md-12">
                     <input
                       type="text"
-                      name="name"
+                      name="from_name"
                       class="form-control"
                       placeholder="Name"
                       required
@@ -240,7 +280,7 @@
                     <input
                       type="text"
                       class="form-control"
-                      name="phone"
+                      name="contact_number"
                       placeholder="Phone"
                       required
                     />
@@ -320,12 +360,12 @@
                 <div>
                   <h4>
                     <a href="" class="stretched-link"
-                      >Collecting & Delivery Sevice</a
+                      >Collecting & Delivery Service</a
                     >
                   </h4>
                   <p>
                     We can collect & deliver your items or equipment to be
-                    sanblasted on our premises.
+                    sandblasted on our premises.
                   </p>
                 </div>
               </div>
@@ -449,7 +489,7 @@
                       <i class="bi bi-check2-all"></i> Metal Gates and Railings:
                       Sandblasting is effective for removing rust, paint, and
                       corrosion from metal gates and railings, enhancing both
-                      aesthetics and durabilit.
+                      aesthetics and durability.
                     </li>
                     <li>
                       <i class="bi bi-check2-all"></i> Concrete Driveways and
@@ -780,9 +820,9 @@ Sandblasting is used to remove old road markings, paint, and reflective material
             <h2>Our Projects</h2>
             <p>
               Our gallery is a testament to the precision and excellence we
-              bring to every sandblasting endeavor. Each image tells a story of
+              bring to every sandblasting endeavour. Each image tells a story of
               meticulous craftsmanship and unparalleled dedication. Let our
-              gallery be the inspiration for your next project, and witness the
+              gallery be the inspiration for your next project and witness the
               impact of expert sandblasting.
             </p>
           </div>
@@ -1149,7 +1189,7 @@ Sandblasting is used to remove old road markings, paint, and reflective material
                   </li>
                   <li>
                     <i class="bi bi-check-circle"></i>
-                    <span>Collection & develiver service</span>
+                    <span>Collection & deliver service</span>
                   </li>
                   <li>
                     <i class="bi bi-check-circle"></i>
@@ -1158,7 +1198,6 @@ Sandblasting is used to remove old road markings, paint, and reflective material
                 </ul>
                 <p>
                   a Well prepared surface is crucial when treating it with any form of coating. a Smooth surface ensures you get the best out of any coating that is applied, making it last longer. 
-
                   Our experience ensures you quality and our focus is service.
                 </p>
 
@@ -1405,17 +1444,12 @@ Sandblasting is used to remove old road markings, paint, and reflective material
             <!-- End Google Maps -->
 
             <div class="col-lg-6">
-              <form
-                action="forms/contact.php"
-                method="post"
-                role="form"
-                class="php-email-form"
-              >
+              <form id="contact-form" class="email-form">
                 <div class="row gy-4">
                   <div class="col-lg-6 form-group">
                     <input
                       type="text"
-                      name="name"
+                      name="from_name"
                       class="form-control"
                       id="name"
                       placeholder="Your Name"
@@ -1426,7 +1460,7 @@ Sandblasting is used to remove old road markings, paint, and reflective material
                     <input
                       type="email"
                       class="form-control"
-                      name="email"
+                      name="user_email"
                       id="email"
                       placeholder="Your Email"
                       required
@@ -1435,11 +1469,11 @@ Sandblasting is used to remove old road markings, paint, and reflective material
                 </div>
                 <div class="form-group">
                   <input
-                    type="text"
+                    type="tel"
                     class="form-control"
-                    name="subject"
-                    id="subject"
-                    placeholder="Subject"
+                    name="contact_number"
+                    id="contact_number"
+                    placeholder="Contace number"
                     required
                   />
                 </div>
