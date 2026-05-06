@@ -3,6 +3,5 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/coeniypd/public_html/
     - /bin/cp -R assets $DEPLOYPATH
-    - /bin/cp -R forms $DEPLOYPATH
     - /bin/cp *.* $DEPLOYPATH
     
