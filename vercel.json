@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/home.html" },
+    { "source": "/sandblasting", "destination": "/sandblasting.html" },
+    { "source": "/powder-coating", "destination": "/powder-coating.html" },
+    { "source": "/contact-us", "destination": "/contact-us.html" }
+  ]
+}
