@@ -1,0 +1,6 @@
+RewriteEngine On
+
+RewriteCond %{THE_REQUEST} /home\.html [NC]
+RewriteRule ^home\.html$ /home [R=301,L]
+
+RewriteRule ^home/?$ home.html [L]

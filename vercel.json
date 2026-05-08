@@ -1,8 +1,8 @@
 {
   "rewrites": [
-    { "source": "/", "destination": "/home" },
-    { "source": "/sandblasting", "destination": "/sandblasting" },
-    { "source": "/powder-coating", "destination": "/powder-coating" },
-    { "source": "/contact-us", "destination": "/contact-us" }
+    { "source": "/", "destination": "/home.html" },
+    { "source": "/sandblasting", "destination": "/sandblasting.html" },
+    { "source": "/powder-coating", "destination": "/powder-coating.html" },
+    { "source": "/contact-us", "destination": "/contact-us.html" }
   ]
 }
